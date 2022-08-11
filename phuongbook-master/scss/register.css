@@ -1,0 +1,22 @@
+@media screen and (max-width: 991px) {
+  .container .image {
+    display: none;
+  }
+  .container .form-container {
+    max-width: 100%;
+  }
+  .container .form-container div {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767) {
+  .container .image {
+    display: none;
+  }
+  .container .form-container {
+    max-width: 100%;
+  }
+  .container .form-container div {
+    width: 100%;
+  }
+}/*# sourceMappingURL=register.css.map */

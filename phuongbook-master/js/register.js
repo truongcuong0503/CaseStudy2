@@ -1,21 +1,13 @@
-let yourName = document.getElementById('name').value;
-let yourPhone = document.getElementById("phone")
-let yourEmail = document.getElementById('email').value;
-let yourAddress = document.getElementById('address').value;
 
-
-
-
-function checkName(name) {
+function checkName() {
     let regxp = /^[a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂẾưăạảấầẩẫậắằẳẵặẹẻẽềềểếỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ\s\W|_]+$/;
-    if(regxp.test(name)) {
+    let yourName = document.getElementById('name').value;
+    if(regxp.test(yourName)) {
         return true;
     } else {
         return false;
     }
 }
-checkName(yourName)
-
 
 function checkPhone() {
     let regxp = /^(0[3|5|7|8|9][0-9]{8}|1[8|9]00[0-9]{4})$/;
@@ -26,4 +18,17 @@ function checkPhone() {
         return false;
     }
 }
+
+function checkEmail() {
+    let regxp = /^(0[3|5|7|8|9][0-9]{8}|1[8|9]00[0-9]{4})$/;
+    let yourEmail = document.getElementById('email').value;
+    if(regxp.test(yourEmail)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+checkName()
 checkPhone()
+checkEmail() 

@@ -8871,9 +8871,11 @@ h1, h2, h3, h4, h5,
           margin: 0 auto;
           z-index: 1; }
       .table .thead-primary tr th.bg-black:after {
-        border-color: #000000 transparent transparent transparent; }
+        border-color: #000000 transparent transparent transparent; 
+      }
       .table .thead-primary tr th.bg-dark:after {
-        border-color: #343a40 transparent transparent transparent; }
+        border-color: #343a40 transparent transparent transparent; 
+      }
   .table tbody tr td {
     vertical-align: middle;
     padding: 30px 0;
@@ -8893,7 +8895,7 @@ h1, h2, h3, h4, h5,
         color: rgba(0, 0, 0, 0.1); }
     .table tbody tr td.price {
       text-align: center !important;
-      background: rgba(0, 0, 0, 0.05);
+      /* background: rgba(0, 0, 0, 0.05); */
       border-right: 1px solid #fff;
       border-bottom: 1px solid #fff !important;
       position: relative;

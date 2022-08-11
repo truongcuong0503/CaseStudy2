@@ -1,0 +1,35 @@
+$display-img : none;
+
+@mixin max-width ($max-width) {
+    max-width: $max-width;
+}
+
+@media screen and (max-width: 991px) {
+    .container {
+        .image {
+            display: $display-img
+        }
+        
+        .form-container {
+            @include max-width(100%);
+            div {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767) {
+    .container {
+        .image {
+            display: $display-img
+        }
+        
+        .form-container {
+            @include max-width(100%);
+            div {
+                width: 100%;
+            }
+        }
+    }
+}

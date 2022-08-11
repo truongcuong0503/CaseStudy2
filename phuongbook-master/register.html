@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>PhuongBook</title>
+    <title>Phuongbook - Dịch vụ thuê xe uy tín</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="scss/register.css">
   </head>
   <body>
     
@@ -63,31 +65,27 @@
         </div>
       </div>
     </div>
-<!-- https://static.vecteezy.com/packs/media/components/global/search-explore-nav/img/vectors/term-bg-1-666de2d941529c25aa511dc18d727160.jpg -->
+
     <div class="container w-75 h-75 mt-5 my-5 row mx-auto px-0 text-white bg-info bg-gradient">
-      <img class="w-50 h-100 col-6 px-0" src="../carbook-master/images/bg_2.jpg">
+      <img class="image w-50 h-100 col-6 px-0" src="../phuongbook-master/images/bg_2.jpg">
       <div class="form-container w-50 h-100 col-6 px-5">
           <h1 class="text-white py-4">Đăng ký lái xe</h1>
           <form>
               <div class="mb-3 my-4">
-                  <input type="text" class="form-control" id="name" placeholder="Họ và tên" autocomplete="off">
-                  <p id="name-error"></p>
+                  <input type="text" class="form-control" id="name" placeholder="Họ và tên" pattern="^[a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂẾưăạảấầẩẫậắằẳẵặẹẻẽềềểếỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ\s\W|_]+$" required>
               </div>
               <div class="mb-3 my-4">
-                  <input type="text" class="form-control" id="phone" placeholder="Số điện thoại">
-                  <p id="name-error"></p>
+                  <input type="text" class="form-control" id="phone" placeholder="Số điện thoại" pattern="^(0[3|5|7|8|9][0-9]{8}|1[8|9]00[0-9]{4})$" required>
               </div>
               <div class="mb-3 my-4">
-                  <input type="email" class="form-control" id="email" placeholder="Email" pattern="^[A-Za-z0-9]+[A-Za-z0-9]*@[a-z0-9]+(\.[a-z]+)$">
-                  <p id="name-error"></p>
+                  <input type="email" class="form-control" id="email" placeholder="Email" pattern="^[A-Za-z0-9]+[A-Za-z0-9]*@[a-z0-9]+(\.[a-z]+)$" required>
               </div>
               <div class="mb-3 my-4">
                   <input type="text" class="form-control" id="address" placeholder="Địa chỉ">
-                  <p id="name-error"></p>
               </div>
               <div class="mb-3 form-check py-3">
                   <input type="checkbox" class="form-check-input">
-                  <label class="form-check-label" id="check-input">Tôi đồng ý với <b><a href="#" class="text-white"><u>điều khoản </u></a></b>và <b><a href="#" class="text-white"><u>dịch vụ </u></a></b></label>
+                  <label class="form-check-label" id="check-input">Tôi đồng ý với <b><a href="#" class="text-white"><u>điều khoản </u></a></b>và <b><a href="#" class="text-white"><u>dịch vụ.</u></a></b></label>
               </div>
               <div class="row ">
                   <div class="col-6">
@@ -224,7 +222,7 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/register.js"></script>
+  <!-- <script src="js/register.js"></script> -->
   
   </body>
 </html>
